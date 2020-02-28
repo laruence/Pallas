@@ -1,0 +1,135 @@
+TD {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 150%
+}
+
+.150 {
+	LINE-HEIGHT: 150%
+}
+.10px {
+	FONT-SIZE: 10px
+}
+A {
+	TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #333333
+}
+A:visited {
+	COLOR: #333333
+}
+A:active {
+	COLOR: #666666
+}
+A:hover {
+	COLOR: #666666
+}
+A.link_white:link {
+	FONT-SIZE: 12px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.link_white:visited {
+	FONT-SIZE: 12px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.link_white:active {
+	FONT-SIZE: 12px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.link_white:hover {
+	FONT-SIZE: 12px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.link_over:link {
+	WIDTH: 100%; COLOR: #333333; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 100%; BACKGROUND-COLOR: #b6e4f8; TEXT-DECORATION: none
+}
+A.link_over:visited {
+	WIDTH: 100%; COLOR: #333333; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 100%; BACKGROUND-COLOR: #b6e4f8; TEXT-DECORATION: none
+}
+A.link_over:active {
+	WIDTH: 100%; COLOR: #333333; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 100%; BACKGROUND-COLOR: #b6e4f8; TEXT-DECORATION: none
+}
+A.link_over:hover {
+	WIDTH: 100%; COLOR: #ffffff; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 100%; BACKGROUND-COLOR: #4fbfef; TEXT-DECORATION: none
+}
+.mainmenu {
+	FONT-SIZE: 13px; BACKGROUND-IMAGE: url(images/menubg.gif); COLOR: #ffffff; LINE-HEIGHT: 150%; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #00a3e8
+}
+.mainmenu A:link {
+	COLOR: #ffffff
+}
+.mainmenu A:visited {
+	COLOR: #ffffff
+}
+.mainmenu A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.line1 {
+	BORDER-RIGHT: #00a3e8 1px solid
+}
+.line2 {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+	background-color: #FFFFFF;
+}
+.line3 {
+	BORDER-BOTTOM: #00a3e8 1px solid
+}
+.line4 {
+	BORDER-TOP: #00a3e8 1px solid; BORDER-BOTTOM: #00a3e8 1px solid
+}
+.bg_main {
+	COLOR: #ffffff; BACKGROUND-COLOR: #303880
+}
+.pane {
+	BORDER-RIGHT: #c0c0c0 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #c0c0c0 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #c0c0c0 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #c0c0c0 1px solid; BACKGROUND-COLOR: #F7F7F7
+}
+.pictd {
+	BORDER-RIGHT: #3ebaed 4px solid; BORDER-TOP: #3ebaed 4px solid; BORDER-BOTTOM: #3ebaed 4px solid
+}
+.cat_top {
+	PADDING-LEFT: 35px; BACKGROUND-IMAGE: url(images/cat_top.gif); PADDING-BOTTOM: 2px; COLOR: #00a3e8; HEIGHT: 40px
+}
+.hot_top {
+	PADDING-LEFT: 2px; COLOR: #f75001; BORDER-BOTTOM: #f75001 1px solid
+}
+.lefttd_main {
+	PADDING-LEFT: 22px; BACKGROUND-IMAGE: url(images/left_bg.gif); COLOR: #ffffff; BACKGROUND-REPEAT: repeat-y; HEIGHT: 20px
+}
+.color_main {
+	COLOR: #00a3e8
+}
+.color_blue {
+	COLOR: blue
+}
+.color_red {
+	COLOR: #fa0004
+}
+.color_white {
+	COLOR: #ffffff
+}
+.dot {
+	BORDER-BOTTOM: #c0c0c0 1px dotted; HEIGHT: 23px; BACKGROUND-COLOR: #ffffff
+}
+.dot_pane {
+	BORDER-RIGHT: #c0c0c0 1px dotted; PADDING-RIGHT: 5px; BORDER-TOP: #c0c0c0 1px dotted; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #c0c0c0 1px dotted; PADDING-TOP: 5px; BORDER-BOTTOM: #c0c0c0 1px dotted
+}
+.img {
+	BORDER-RIGHT: #333333 1px solid; BORDER-TOP: #333333 1px solid; BORDER-LEFT: #333333 1px solid; BORDER-BOTTOM: #333333 1px solid
+}
+INPUT {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-LEFT: #cccccc 1px solid; COLOR: #666666; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #f9f9f9
+}
+TEXTAREA {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-LEFT: #cccccc 1px solid; COLOR: #666666; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #f9f9f9
+}
+SELECT {
+	FONT-SIZE: 12px; VERTICAL-ALIGN: middle; HEIGHT: 20px; BACKGROUND-COLOR: #f9f9f9
+}
+.radio {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+.button {
+	FONT-SIZE: 12px; HEIGHT: 22px
+}

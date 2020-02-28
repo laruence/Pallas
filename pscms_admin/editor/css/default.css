@@ -1,0 +1,65 @@
+TD
+{
+FONT-SIZE: 9pt
+}
+BODY
+{
+FONT-SIZE: 9pt
+}
+A:link
+{
+COLOR: blue;
+TEXT-DECORATION: none
+}
+A:visited
+{
+COLOR: blue;
+TEXT-DECORATION: none
+}
+A:active
+{
+COLOR: red;
+TEXT-DECORATION: none
+}
+A:hover
+{
+COLOR: #999999;
+TEXT-DECORATION: none
+}
+INPUT
+{
+FONT-SIZE: 9pt;
+FONT-FAMILY: ËÎÌו
+}
+TEXTAREA
+{
+FONT-SIZE: 9pt;
+FONT-FAMILY: ËÎÌו
+}
+SELECT
+{
+FONT-SIZE: 9pt;
+FONT-FAMILY: ËÎÌו
+}
+
+.Up
+{border-left: 1Px solid rgb(12,12,12);
+border-right: 1px solid rgb(12,12,12);
+border-bottom: 1px solid rgb(12,12,12);
+border-top: 1px solid rgb(12,12,12);
+cursor:hand;
+}
+.Down
+{border-right: 1Px solid rgb(233,244,249);
+border-left: 1px solid rgb(12,12,12);
+border-top: 1px solid rgb(12,12,12);
+border-bottom: 1px solid rgb(233,244,249);
+cursor:hand;
+}
+.None
+{border-right: 1Px solid rgb(255,255,255);
+border-left: 1px solid rgb(255,255,255);
+border-top: 1px solid rgb(255,255,255);
+border-bottom: 1px solid rgb(255,255,255);
+cursor:hand;
+}

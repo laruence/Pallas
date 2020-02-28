@@ -1,0 +1,57 @@
+<?php
+$categoryCache = array (
+  1 => 
+  array (
+    'cname' => '本站简介',
+    'ename' => 'company',
+  ),
+  2 => 
+  array (
+    'cname' => '产品展示',
+    'ename' => 'products',
+    'childs' => 
+    array (
+      3 => 
+      array (
+        'cname' => '月饼',
+        'ename' => 'cake',
+      ),
+      4 => 
+      array (
+        'cname' => '水果',
+        'ename' => 'fruit',
+      ),
+      9 => 
+      array (
+        'cname' => '茶油',
+        'ename' => 'chayou',
+      ),
+    ),
+  ),
+  5 => 
+  array (
+    'cname' => '月饼礼券',
+    'ename' => '5',
+  ),
+  8 => 
+  array (
+    'cname' => '特价产品',
+    'ename' => '8',
+  ),
+  7 => 
+  array (
+    'cname' => '月饼代加工',
+    'ename' => '7',
+  ),
+  6 => 
+  array (
+    'cname' => '站内快讯',
+    'ename' => 'nouse',
+  ),
+  10 => 
+  array (
+    'cname' => '联系我们',
+    'ename' => 'contact',
+  ),
+);
+?>

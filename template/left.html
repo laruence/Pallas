@@ -1,0 +1,73 @@
+<?php
+$html =<<<INDEX
+ <td background="{$glo_web_path}source/index_10_01.jpg"><table width="998" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+ <td valign="top" width="198">
+ <table width="160" align="center" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+ <td>
+INDEX;
+foreach($tplVars['contents'] as $sort => $content){
+ $html .=<<<HTML
+ <table width="160" align="center" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+ <td width="23"><img src="{$glo_web_path}source/index_11_01.gif" width="23" height="26"></td>
+ <td class="f9bold" width="126" bgcolor="#ceb179"><span style="margin-left: 6px;">
+HTML;
+ if(isset($content['cat_url'])){
+ $html .=<<<HTML
+ <a href="{$content['cat_url']}">$sort</a>
+HTML;
+ }
+ else{
+ $html .= $sort;
+ }
+
+ $html .=<<<HTML
+</span></td>
+ <td width="11"><img src="{$glo_web_path}source/index_11_02.gif" width="11" height="26"></td>
+ </tr>
+ </tbody></table>
+ <table width="160" align="center" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+ <td height="10"></td>
+ </tr>
+ </tbody></table>
+ <table width="160" align="center" border="0" cellpadding="0" cellspacing="0">
+ <tbody>
+HTML;
+ foreach($content as $k => $v){
+ if(!is_array($v))
+ 	break;
+ $url = $glo_web_path. 'category/'. $categoryCache[$v['news_cat']]['ename'];
+ $url .= ($v['news_spec'] == 0)? '' : '/'.$categoryCache[$v['news_cat']]['childs'][$v['news_spec']]['ename'];
+ $url .= '/'.$v['news_id'] . '.html';
+ $html.=<<<HTML
+ <tr>
+ <td width="25"></td>
+ <td class="f9" width="18" align="center" height="25">·</td>
+ <td class="f9" width="117"><a href="{$url}">{$v['news_title']}</a></td>
+ </tr>
+HTML;
+ }
+ $html .=<<<INDEX
+ </tbody></table>
+INDEX;
+}
+$html .=<<<INDEX
+ <table width="160" align="center" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+ <td height="10"></td>
+ </tr>
+ </tbody></table>
+ <table width="160" align="center" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+ <td height="60"></td>
+ </tr>
+ </tbody></table>
+ </td>
+ </tr>
+ </tbody></table></td>
+INDEX;
+return $html;
+?>

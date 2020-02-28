@@ -1,0 +1,166 @@
+<?php
+$html = <<<HTML
+<table width="998" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td background="{$glo_web_path}source/index_10_01.jpg"><table width="998" border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+			  <td width="433"><img src="{$navImg}" alt="" width="433" height="53"></td>
+        <td width="565"><img src="{$glo_web_path}source/index_08_01.jpg" width="565" height="53"></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+<table width="998" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+{$LEFT_CONTENT}
+<td valign="top" width="800">
+<table width="760" align="center" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+ <td>
+  <table width="370" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+HTML;
+$num = count($row);
+for($i=0;$i<$num;$i++){
+	$url = $glo_web_path. 'category/'. $categoryCache[$row[$i]['news_cat']]['ename'];
+	$url .= ($row[$i]['news_spec'] == 0)? '' : '/'.$categoryCache[$row[$i]['news_cat']]['childs'][$row[$i]['news_spec']]['ename'];
+	$url .= '/'.$row[$i]['news_id'] . '.html';
+	if($row[$i]['news_picnews']){
+		$img = $glo_web_path.'uploads/'.$row[$i]['news_picurl'];
+	}else{
+		$img = '';
+	}
+	$html .=<<<HTML
+		<tr>
+	 <td>
+	 <table width="370" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+
+				<table width="350" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td width="203"><table width="203" border="0" cellpadding="0" cellspacing="0" height="150">
+<tbody><tr>
+<td background="{$glo_web_path}source/bg01.gif"><table width="185" border="0" cellpadding="0" cellspacing="0" height="150">
+<tbody><tr>
+<td align="center">
+			  <a href="{$url}"><img src="{$img}" alt="{$row[$i]['news_title']}" vspace="3" width="178" border="0" height="144" hspace="3"></a></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table></td>
+<td class="f9bold" valign="top">
+					<table width="130" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td align="left"><a href="{$url}">{$row[$i]['news_title']}</a><br>
+{$row[$i]['news_abstract']}<br>
+------------------<br>
+优惠价格：{$row[$i]['news_type1']}<br>
+市场零售价：{$row[$i]['news_type2']}<br>
+<a href="{$url}">详细信息&gt;&gt;</a>
+</td>
+</tr>
+</tbody></table>
+					</td>
+</tr>
+</tbody></table>
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td height="20"></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table></td>
+HTML;
+	++$i;
+	if(isset($row[$i])){
+		$url = $glo_web_path. 'category/'. $categoryCache[$row[$i]['news_cat']]['ename'];
+		$url .= ($row[$i]['news_spec'] == 0)? '' : '/'.$categoryCache[$row[$i]['news_cat']]['childs'][$row[$i]['news_spec']]['ename'];
+		$url .= '/'.$row[$i]['news_id'] . '.html';
+		if($row[$i]['news_picnews']){
+			$img = $glo_web_path.'uploads/'.$row[$i]['news_picurl'];
+		}else{
+			$img = '';
+		}
+		$html .=<<<HTML
+						 <td>
+							 <table width="370" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+
+				<table width="350" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td width="203"><table width="203" border="0" cellpadding="0" cellspacing="0" height="150">
+<tbody><tr>
+<td background="{$glo_web_path}source/bg01.gif"><table width="185" border="0" cellpadding="0" cellspacing="0" height="150">
+<tbody><tr>
+<td align="center">
+							  <a href="{$url}"><img src="{$img}" alt="{$row[$i]['news_title']}" vspace="3" width="178" border="0" height="144" hspace="3"></a></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table></td>
+<td class="f9bold" valign="top">
+					<table width="130" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td align="left"><a href="{$url}">{$row[$i]['news_title']}</a><br>
+{$row[$i]['news_abstract']}<br>
+------------------<br>
+优惠价格：{$row[$i]['news_type1']}<br>
+市场零售价：{$row[$i]['news_type2']}<br>
+<a href="{$url}">详细信息&gt;&gt;</a>
+</td>
+</tr>
+</tbody></table>
+					</td>
+</tr>
+</tbody></table>
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td height="20"></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table></td>
+HTML;
+	}
+	$html .= '</tr>';
+}
+$html .=<<<HTML
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table width="593" align="center" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+<table width="96%" align="center" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="font9to160green02" align="center"><span class="wenben"><span class="f9">
+{$pagination}
+</span></span></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+<table width="998" align="center" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td background="{$glo_web_path}source/index_10_01.jpg"><table width="198" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td valign="top" width="198">&nbsp;</td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+<table width="998" align="center" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td><img src="{$glo_web_path}source/index_15.jpg" alt="" width="998" height="37"></td>
+</tr>
+</tbody></table>
+HTML;
+return $html;
+?>

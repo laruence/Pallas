@@ -1,0 +1,19 @@
+<title>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</title>
+<script>
+function window.onload(  )
+{
+	var args=window.dialogArguments;
+	var a=args[0];
+	var b=args[1];
+	var c=args[2]
+	var win;
+	if( c )
+		win=window.open( a,b,c );
+	else if( b )
+		win=window.open( a,b );
+	else
+		win=window.open( a );
+	window.returnValue=win;
+	window.close(  );
+}
+</script>

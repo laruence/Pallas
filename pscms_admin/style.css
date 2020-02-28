@@ -1,0 +1,78 @@
+body{
+      background: #ffffff; font-size: 12px; margin-top:4px; margin-bottom:0px; margin-left:0px;margin-right:0px;
+      SCROLLBAR-FACE-COLOR:  #78b8f1; SCROLLBAR-HIGHLIGHT-COLOR:  #78b8f1; 
+      SCROLLBAR-SHADOW-COLOR:  #78b8f1; SCROLLBAR-DARKSHADOW-COLOR:  #78b8f1; 
+      SCROLLBAR-3DLIGHT-COLOR:  #78b8f1; SCROLLBAR-ARROW-COLOR: #FFFFFF;
+      SCROLLBAR-TRACK-COLOR: #AABFEC;
+}
+td{
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 9pt;
+}
+th{
+        FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: white; BACKGROUND-COLOR: #DBDBDB;line-height: 150%;
+}
+INPUT {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+TEXTAREA {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+SELECT {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+button{
+	FONT-SIZE: 9pt;
+	HEIGHT: 20px; 
+}
+.button
+{ border:1px #333333 solid ;
+  font:"Times New Roman", Times, serif, "黑体";
+  background:#E9EAE6;
+}
+a{
+	TEXT-DECORATION: none;
+	color: #000000;
+}
+.STYLE2 {
+	color: #666666;
+	font-family:"新宋体";
+	font-size: 12px;
+	font-weight: bold;
+}
+a:hover{
+	COLOR: #009286;
+	text-decoration: underline;
+}
+td.tablerow {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #F1F3F5; PADDING-BOTTOM: 3px; PADDING-TOP: 3px;line-height: 140%;
+}
+td.tablerowhighlight {
+	FONT-WEIGHT: bold; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #E4EDF9; PADDING-BOTTOM: 3px; PADDING-TOP: 3px;line-height: 130%;
+}
+.STYLE1 {color: #000000}
+.title{
+	background:url(Images/topBar_bg.gif);
+}
+.border{
+	border: 1px solid #009286;
+}
+
+.submenu {
+        FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: black; BACKGROUND-COLOR: #DBDBDB;line-height: 150%;
+}
+.tdbg{
+	background:#E1F4EE;
+	line-height: 120%;
+}
+.tdbg2{
+	background:#E0EEF5;
+	line-height: 120%;
+}
+.topbg{
+	background:#009286;
+	color: #FFFFFF;
+}
+.bgcolor {
+	background-color: #E1F4EE;
+}

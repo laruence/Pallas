@@ -1,0 +1,39 @@
+A {
+	COLOR: blue; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: red; TEXT-DECORATION: none
+}
+A:active {
+	TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+TD {
+	FONT-SIZE: 10.5pt
+}
+BODY {
+	FONT-SIZE: 10.5pt
+}
+INPUT {
+	FONT-SIZE: 9pt
+}
+SELECT {
+	FONT-SIZE: 9pt
+}
+TEXTAREA {
+	FONT-SIZE: 9pt
+}
+.l1 {
+	COLOR: #3366ff; LINE-HEIGHT: 170%
+}
+.p150 {
+	LINE-HEIGHT: 150%
+}
+.cp {
+	FONT-SIZE: 9pt; COLOR: red
+}
+.p9 {
+	FONT-SIZE: 9pt
+}

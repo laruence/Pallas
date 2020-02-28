@@ -1,0 +1,64 @@
+<?php
+$html = <<<HTML
+<table width="998" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td background="{$glo_web_path}source/index_10_01.jpg"><table width="998" border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td width="433"><img src="{$glo_web_path}source/index_07_03.jpg" alt="" width="433" height="53"></td>
+        <td width="565"><img src="{$glo_web_path}source/index_08_01.jpg" width="565" height="53"></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+<table width="998" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+{$LEFT_CONTENT}
+        <td valign="top" width="800"><table width="780" align="center" border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr>
+            <td><table width="706" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+						<td valign="bottom" align="center" height="30"><span class="f11bold">{$news['news_title']}</span></td>
+                  </tr>
+              </tbody></table>
+                <table width="706" align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tbody><tr>
+                    <td height="16"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                          <td background="{$glo_web_path}source/line.gif" height="1"></td>
+                        </tr>
+                    </tbody></table></td>
+                  </tr>
+                </tbody></table>
+              <table width="706" align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tbody><tr>
+                    <td align="left"><span class="f9"><blockquote dir="ltr" 0px="">
+								{$news['news_text']}
+					</blockquote><br><div style="text-align: right;">{$pagination}</div></span></td>
+                  </tr>
+                </tbody></table>
+              <table width="580" align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tbody><tr>
+                    <td height="10"></td>
+                  </tr>
+                </tbody></table>
+              <table width="580" align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tbody><tr>
+                    <td height="10"></td>
+                  </tr>
+              </tbody></table></td>
+          </tr>
+        </tbody></table></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+<table width="998" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td><img src="{$glo_web_path}source/index_15.jpg" alt="" width="998" height="37"></td>
+  </tr>
+</tbody></table></td>
+  </tr>
+</tbody></table>
+HTML;
+return $html;
+?>
